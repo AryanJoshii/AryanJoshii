@@ -1,5 +1,5 @@
 # 💫 About Me:
-🔭 I’m currently working on real-time chat application<br><br>👯 I’m looking to collaborate on Full-stack JavaScript and TypeScript projects<br><br>🌱 I’m currently learning DSA and DevOps<br><br>💬 Ask me about:<br>JavaScript, TypeScript, React, Next.js, Express.js, MongoDB or any software development related questions<br><br>⚡ Fun fact: <br>I love to stay updated with latest technologies
+🔭 I’m currently working on real-time chat application<br><br>👯 I’m looking to collaborate on Full-stack JavaScript and TypeScript projects<br><br>🌱 I’m currently learning DSA and Server Setup<br><br>💬 Ask me about:<br>JavaScript, TypeScript, React, Next.js, Express.js, MongoDB or any software development related questions<br><br>⚡ Fun fact: <br>I love to stay updated with latest technologies
 
 
 ## 🌐 Socials:
