@@ -1,4 +1,5 @@
-<a href="https://app.daily.dev/aryanjoshii"><img src="https://api.daily.dev/devcards/v2/ayXr98gvxvIbKgkyLgJNn.png?type=wide&r=7lz" width="652" alt="Aryan Joshi's Dev Card"/></a>
+<a href="https://app.daily.dev/aryanjoshii"><img src="./devcard.png" width="356" alt="Aryan Joshi's Dev Card"/></a>
+
 
 
 ## 🌐 Socials:
