@@ -1,4 +1,4 @@
-<a href="https://app.daily.dev/aryanjoshii"><img src="./devcard.png" width="356" alt="Aryan Joshi's Dev Card"/></a>
+<a href="https://app.daily.dev/aryanjoshii"><img src="./devcard.png?" width="356" alt="Aryan Joshi's Dev Card"/></a>
 
 ## 🔗 Socials:
 [![Static Badge](https://img.shields.io/badge/X%20(Twitter)-black?style=for-the-badge&logo=x&link=https%3A%2F%2Fx.com%2Fhiaryanjoshi)](https://x.com/hiaryanjoshi)
