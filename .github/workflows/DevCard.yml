@@ -13,14 +13,14 @@ jobs:
       contents: write
     steps:
       - name: devcard-vert
-        uses: dailydotdev/action-devcard@3.0.0
+        uses: dailydotdev/action-devcard@3.2.0
         with:
           user_id: ${{ secrets.USER_ID }}
           commit_message: "chore: update ${filename}"
           dryrun: true
 
       - name: devcard-horiz
-        uses: dailydotdev/action-devcard@3.0.0
+        uses: dailydotdev/action-devcard@3.2.0
         with:
           user_id: ${{ secrets.USER_ID }}
           commit_message: "chore: update ${filename}"
