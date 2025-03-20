@@ -18,6 +18,7 @@ jobs:
           user_id: ${{ secrets.USER_ID }}
           commit_message: "chore: update ${filename}"
           dryrun: true
+          commit_filename: devcard-vert.png
 
       - name: devcard-horiz
         uses: dailydotdev/action-devcard@3.2.0
@@ -26,11 +27,17 @@ jobs:
           commit_message: "chore: update ${filename}"
           dryrun: true
           type: "wide"
+          commit_filename: devcard-horiz.png
+
+      - name: Move DevCards to the repository root
+        run: |
+          mv /tmp/devcard-horiz.png .
+          mv /tmp/devcard-vert.png .
 
       - name: Commit and Push Changes
         run: |
-          git config --local user.name "github-actions"
-          git config --local user.email "github-actions@github.com"
-          git add devcard-horizontal.svg devcard-vertical.svg
+          git config user.name "github-actions[bot]"
+          git config user.email "noreply@github.com"
+          git add devcard-horiz.png devcard-vert.png
           git commit -m "chore: update devcards"
           git push
