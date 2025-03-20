@@ -29,6 +29,9 @@ jobs:
           type: "wide"
           commit_filename: devcard-horiz.png
 
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
       - name: Move DevCards to the repository root
         run: |
           mv /tmp/devcard-horiz.png .
