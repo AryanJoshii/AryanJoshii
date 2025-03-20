@@ -1,7 +1,7 @@
 <a href="https://app.daily.dev/aryanjoshii">
   <picture>
-    <source media="(max-width: 799px)" srcset="./devcard-vert.png" />
-    <source media="(min-width: 800px)" srcset="./devcard-horiz.png" />
+    <source media="(max-width: 767px)" srcset="./devcard-vert.png" />
+    <source media="(min-width: 768px)" srcset="./devcard-horiz.png" />
     <img src="./devcard-horiz.png?" alt="Aryan Joshi's Dev Card" />
   </picture>
 </a>
