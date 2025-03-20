@@ -12,9 +12,25 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: devcard
+      - name: devcard-vert
         uses: dailydotdev/action-devcard@3.0.0
         with:
           user_id: ${{ secrets.USER_ID }}
           commit_message: "chore: update ${filename}"
           dryrun: true
+
+      - name: devcard-horiz
+        uses: dailydotdev/action-devcard@3.0.0
+        with:
+          user_id: ${{ secrets.USER_ID }}
+          commit_message: "chore: update ${filename}"
+          dryrun: true
+          type: "wide"
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.name "github-actions"
+          git config --local user.email "github-actions@github.com"
+          git add devcard-horizontal.svg devcard-vertical.svg
+          git commit -m "chore: update devcards"
+          git push
