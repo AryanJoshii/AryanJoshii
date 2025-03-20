@@ -12,6 +12,9 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        
       - name: devcard-vert
         uses: dailydotdev/action-devcard@3.2.0
         with:
@@ -28,9 +31,6 @@ jobs:
           dryrun: true
           type: "wide"
           commit_filename: devcard-horiz.png
-
-      - name: Checkout repo
-        uses: actions/checkout@v4
 
       - name: Move DevCards to the repository root
         run: |
