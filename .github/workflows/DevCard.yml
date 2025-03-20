@@ -35,9 +35,8 @@ jobs:
           mv /tmp/devcard-vert.png .
 
       - name: Commit and Push Changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "noreply@github.com"
-          git add devcard-horiz.png devcard-vert.png
-          git commit -m "chore: update devcards"
-          git push
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: 'devcard-vert.png devcard-horiz.png'
+          default_author: github_actions
+          message: 'chore: update devcards'
