@@ -15,19 +15,17 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         
-      - name: devcard-vert
+      - name: Fetch vertical devcard
         uses: dailydotdev/action-devcard@3.2.0
         with:
           user_id: ${{ secrets.USER_ID }}
-          commit_message: "chore: update ${filename}"
           dryrun: true
           commit_filename: devcard-vert.png
 
-      - name: devcard-horiz
+      - name: Fetch horizontal devcard
         uses: dailydotdev/action-devcard@3.2.0
         with:
           user_id: ${{ secrets.USER_ID }}
-          commit_message: "chore: update ${filename}"
           dryrun: true
           type: "wide"
           commit_filename: devcard-horiz.png
