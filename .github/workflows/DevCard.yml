@@ -16,14 +16,14 @@ jobs:
         uses: actions/checkout@v4
         
       - name: Fetch vertical devcard
-        uses: dailydotdev/action-devcard@3.2.0
+        uses: dailydotdev/action-devcard@3.2.1
         with:
           user_id: ${{ secrets.USER_ID }}
           dryrun: true
           commit_filename: devcard-vert.png
 
       - name: Fetch horizontal devcard
-        uses: dailydotdev/action-devcard@3.2.0
+        uses: dailydotdev/action-devcard@3.2.1
         with:
           user_id: ${{ secrets.USER_ID }}
           dryrun: true
